@@ -36,11 +36,14 @@ img {
 
 a {
   color: var(--accent);
-  text-decoration: none;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  text-decoration-color: rgba(35, 56, 74, 0.45);
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration-color: currentColor;
 }
 
 h1,
@@ -82,6 +85,7 @@ dl {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .home-page .nav-links {
@@ -94,6 +98,11 @@ dl {
   color: var(--text-muted);
   font-size: 0.94rem;
   font-weight: 600;
+  text-decoration: none;
+}
+
+.home-page .nav-links a:hover {
+  text-decoration: underline;
 }
 
 .home-page .hero {
@@ -162,6 +171,7 @@ dl {
   color: #111a22;
   font-size: 0.94rem;
   font-weight: 700;
+  text-decoration: none;
   transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
@@ -214,6 +224,16 @@ dl {
 .home-page .contact-list dd {
   margin: 0;
   color: var(--text-muted);
+}
+
+.home-page .contact-list a,
+.home-page .compact-list a,
+.home-page .resource-list a,
+.home-page .reference-list a,
+.home-page .experience-company a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(24, 33, 42, 0.42);
 }
 
 .home-page .home-content {
@@ -421,6 +441,49 @@ dl {
   margin-top: 18px;
 }
 
+.home-page .site-footer {
+  margin-top: 64px;
+  background: #11181f;
+  color: #d8e0e6;
+  border-radius: 14px;
+}
+
+.home-page .footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
+  padding: 26px 30px;
+}
+
+.home-page .footer-name {
+  margin-bottom: 4px;
+  color: #ffffff;
+  font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.home-page .footer-role {
+  margin-bottom: 0;
+  color: #aebbc5;
+  font-size: 0.92rem;
+}
+
+.home-page .footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px 20px;
+}
+
+.home-page .footer-links a {
+  color: #eef3f6;
+  text-decoration-color: rgba(238, 243, 246, 0.42);
+  font-size: 0.94rem;
+  font-weight: 600;
+}
+
 .project-detail-page {
   max-width: 1100px;
   margin: 0 auto;
@@ -568,6 +631,15 @@ dl {
   .home-page .projects-grid,
   .home-page .skills-grid {
     grid-template-columns: 1fr;
+  }
+
+  .home-page .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .home-page .footer-links {
+    justify-content: flex-start;
   }
 }
 
