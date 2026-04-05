@@ -19,10 +19,11 @@
       </div>
     </nav>
 
-    <header id="home" class="hero-panel">
-      <div class="hero-copy">
-        <p class="hero-kicker">Aerospace Engineering | Motorsport Engineering | Aerodynamics | Vehicle Analysis</p>
+    <header id="home" class="hero">
+      <div class="hero-main">
+        <p class="hero-label">Portfolio</p>
         <h1>Valentino Ciabattari</h1>
+        <p class="hero-role">Aerospace Engineering | Motorsport Engineering | Aerodynamics | Vehicle Analysis</p>
 
         <div class="home-intro">
           <p>
@@ -33,54 +34,47 @@
           </p>
         </div>
 
-        <div class="home-buttons">
-          <a class="button-primary" href="#experience">View Experience</a>
+        <div class="hero-actions">
+          <a class="button-primary" href="docs/CV.pdf" target="_blank">Download CV</a>
           <a href="#projects">View Projects</a>
-          <a href="docs/CV.pdf" target="_blank">Download CV</a>
-          <a href="#documents">View Documents</a>
+          <a href="#experience">View Experience</a>
         </div>
       </div>
 
-      <aside class="hero-details">
-        <div class="hero-details-card">
+      <aside class="hero-side">
+        <div class="contact-block">
           <h2>Contact</h2>
-          <div class="home-contact">
-            <p>
-              <strong>Email:</strong>
-              <a href="mailto:ciabattariv@gmail.com">ciabattariv@gmail.com</a>
-            </p>
-            <p>
-              <strong>LinkedIn:</strong>
-              <a href="https://www.linkedin.com/in/valentino-ciabattari/" target="_blank">
-                Valentino_Ciabattari
-              </a>
-            </p>
-            <p>
-              <strong>CV:</strong>
-              <a href="docs/CV.pdf" target="_blank">Download CV</a>
-            </p>
-            <p>
-              <strong>Phone:</strong>
-              <a href="tel:+393444847288">+39 3444847288</a>
-            </p>
-          </div>
-        </div>
-
-        <div class="hero-details-card">
-          <h2>Profile</h2>
-          <ul class="profile-facts">
-            <li>Master's Student in Aerospace Engineering</li>
-            <li>Turin, Italy</li>
-            <li>Argentine and Italian Citizenship</li>
-          </ul>
+          <dl class="contact-list">
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:ciabattariv@gmail.com">ciabattariv@gmail.com</a></dd>
+            </div>
+            <div>
+              <dt>LinkedIn</dt>
+              <dd>
+                <a href="https://www.linkedin.com/in/valentino-ciabattari/" target="_blank">
+                  Valentino_Ciabattari
+                </a>
+              </dd>
+            </div>
+            <div>
+              <dt>Phone</dt>
+              <dd><a href="tel:+393444847288">+39 3444847288</a></dd>
+            </div>
+            <div>
+              <dt>CV</dt>
+              <dd><a href="docs/CV.pdf" target="_blank">Download CV</a></dd>
+            </div>
+          </dl>
         </div>
       </aside>
     </header>
 
-    <main>
-      <section class="overview-layout">
-        <section id="about" class="panel panel-about">
+    <main class="home-content">
+      <section class="intro-layout">
+        <section id="about" class="content-block about-block">
           <div class="section-heading">
+            <p class="section-label">Profile</p>
             <h2>About Me</h2>
           </div>
           <p>
@@ -94,9 +88,10 @@
           </p>
         </section>
 
-        <aside class="credentials-column">
-          <section id="education" class="panel">
+        <aside class="sidebar-stack">
+          <section id="education" class="sidebar-block">
             <div class="section-heading">
+              <p class="section-label">Academic Background</p>
               <h2>Education</h2>
             </div>
 
@@ -122,8 +117,9 @@
             </article>
           </section>
 
-          <section id="languages" class="panel">
+          <section id="languages" class="sidebar-block">
             <div class="section-heading">
+              <p class="section-label">Communication</p>
               <h2>Languages</h2>
             </div>
             <ul class="compact-list">
@@ -134,8 +130,9 @@
             </ul>
           </section>
 
-          <section id="further-education" class="panel">
+          <section id="further-education" class="sidebar-block">
             <div class="section-heading">
+              <p class="section-label">Additional Training</p>
               <h2>Further Education</h2>
             </div>
             <ul class="compact-list">
@@ -147,8 +144,9 @@
         </aside>
       </section>
 
-      <section id="experience" class="section-container experience-section">
+      <section id="experience" class="content-section">
         <div class="section-heading">
+          <p class="section-label">Professional Experience</p>
           <h2>Engineering Experience</h2>
           <p class="section-subtitle">
             Practical engineering experience developed through motorsport, vehicle development, telemetry analysis, and technical software tools.
@@ -225,8 +223,9 @@
         </div>
       </section>
 
-      <section id="projects" class="section-container projects-section">
+      <section id="projects" class="content-section">
         <div class="section-heading">
+          <p class="section-label">Technical Portfolio</p>
           <h2>Selected Projects</h2>
           <p class="section-subtitle">
             Selected technical projects combining motorsport engineering, aerospace analysis,
@@ -236,7 +235,6 @@
 
         <div class="projects-grid">
           <article class="project-card">
-            <div class="project-accent"></div>
             <div class="project-top">
               <h3>Motorsport Technical Management Software</h3>
               <p class="project-context">FDC Diseño y Desarrollo | 2025 – Present</p>
@@ -260,7 +258,6 @@
           </article>
 
           <article class="project-card">
-            <div class="project-accent"></div>
             <div class="project-top">
               <h3>UTV Competition Vehicle Preliminary Design</h3>
               <p class="project-context">FDC Diseño y Desarrollo | 2025 – Present</p>
@@ -286,7 +283,6 @@
           </article>
 
           <article class="project-card">
-            <div class="project-accent"></div>
             <div class="project-top">
               <h3>Turismo Nacional Front Nose Aerodynamic Redesign</h3>
               <p class="project-context">Detroit Racing | 2025</p>
@@ -312,7 +308,6 @@
           </article>
 
           <article class="project-card">
-            <div class="project-accent"></div>
             <div class="project-top">
               <h3>Flight Performance and Stability Analysis of the Alenia C-27J Spartan</h3>
               <p class="project-context">Academic Project | Flight Mechanics | 2024</p>
@@ -337,7 +332,6 @@
           </article>
 
           <article class="project-card">
-            <div class="project-accent"></div>
             <div class="project-top">
               <h3>Numerical Study of the Blasius Boundary Layer</h3>
               <p class="project-context">Academic Project | Fluid Mechanics | 2023</p>
@@ -363,13 +357,14 @@
         </div>
       </section>
 
-      <section id="skills" class="section-container">
+      <section id="skills" class="content-section">
         <div class="section-heading">
+          <p class="section-label">Capabilities</p>
           <h2>Skills</h2>
         </div>
 
         <div class="skills-grid">
-          <div class="skills-card">
+          <section class="skills-card">
             <h3>Technical Skills</h3>
             <div class="tags">
               <span class="tag">Applied Aerodynamics</span>
@@ -381,9 +376,9 @@
               <span class="tag">3D CAD Design</span>
               <span class="tag">Structural Analysis</span>
             </div>
-          </div>
+          </section>
 
-          <div class="skills-card">
+          <section class="skills-card">
             <h3>Software & Tools</h3>
             <div class="tags">
               <span class="tag">Python</span>
@@ -398,9 +393,9 @@
               <span class="tag">OptimumKinematics</span>
               <span class="tag">SQL / MySQL / SQLite</span>
             </div>
-          </div>
+          </section>
 
-          <div class="skills-card">
+          <section class="skills-card">
             <h3>Soft Skills</h3>
             <div class="tags">
               <span class="tag">Commitment & Responsibility</span>
@@ -411,13 +406,14 @@
               <span class="tag">Technical Communication</span>
               <span class="tag">Adaptability</span>
             </div>
-          </div>
+          </section>
         </div>
       </section>
 
       <section class="resources-layout">
-        <section id="documents" class="panel">
+        <section id="documents" class="content-block">
           <div class="section-heading">
+            <p class="section-label">Supporting Material</p>
             <h2>Documents</h2>
           </div>
           <ul class="resource-list">
@@ -430,8 +426,9 @@
           </ul>
         </section>
 
-        <section id="references" class="panel">
+        <section id="references" class="content-block">
           <div class="section-heading">
+            <p class="section-label">Recommendations</p>
             <h2>References</h2>
           </div>
 
