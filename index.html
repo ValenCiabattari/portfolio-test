@@ -14,7 +14,6 @@
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a href="#projects">Projects</a>
-        <a href="#documents">Documents</a>
         <a href="#references">References</a>
       </div>
     </nav>
@@ -72,23 +71,37 @@
 
     <main class="home-content">
       <section class="intro-layout">
-        <section id="about" class="content-block about-block">
-          <div class="section-heading">
-            <p class="section-label">Profile</p>
-            <h2>About Me</h2>
-          </div>
-          <p>
-            I am an Aerospace Engineering master's student with a growing professional
-            background in motorsport engineering, combining academic training with
-            practical experience in racing applications. My main interests lie in
-            aerodynamics, simulation, vehicle analysis, and the development of technical
-            tools for engineering workflows. I am particularly motivated by projects
-            where analytical methods, computational tools, and real-world performance
-            come together.
-          </p>
-        </section>
+        <div class="intro-column intro-column-main">
+          <section id="about" class="content-block about-block">
+            <div class="section-heading">
+              <p class="section-label">Profile</p>
+              <h2>About Me</h2>
+            </div>
+            <p>
+              I am an Aerospace Engineering master's student with a growing professional
+              background in motorsport engineering, combining academic training with
+              practical experience in racing applications. My main interests lie in
+              aerodynamics, simulation, vehicle analysis, and the development of technical
+              tools for engineering workflows. I am particularly motivated by projects
+              where analytical methods, computational tools, and real-world performance
+              come together.
+            </p>
+          </section>
 
-        <aside class="sidebar-stack">
+          <section id="further-education" class="sidebar-block">
+            <div class="section-heading">
+              <p class="section-label">Additional Training</p>
+              <h2>Further Education</h2>
+            </div>
+            <ul class="compact-list">
+              <li><a href="docs/SolidWorks_Course_Certificate.pdf" target="_blank">Diseño y Modelado Mecánico 3D con SolidWorks: Universidad Tecnológica Nacional (UTN).</a></li>
+              <li><a href="docs/Cambridge_Exchange_Certificate.pdf" target="_blank">Student Exchange Course: University of Cambridge.</a></li>
+              <li><a href="docs/MATLAB_Course_Certificate.pdf" target="_blank">Introducción a MATLAB/Simulink con Enfoque a Problemas de Control: Facultad de Ciencias Exactas, Físicas y Naturales, UNC.</a></li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="intro-column intro-column-secondary">
           <section id="education" class="sidebar-block">
             <div class="section-heading">
               <p class="section-label">Academic Background</p>
@@ -129,19 +142,7 @@
               <li>French: Basic level.</li>
             </ul>
           </section>
-
-          <section id="further-education" class="sidebar-block">
-            <div class="section-heading">
-              <p class="section-label">Additional Training</p>
-              <h2>Further Education</h2>
-            </div>
-            <ul class="compact-list">
-              <li><a href="docs/SolidWorks_Course_Certificate.pdf" target="_blank">Diseño y Modelado Mecánico 3D con SolidWorks: Universidad Tecnológica Nacional (UTN).</a></li>
-              <li><a href="docs/Cambridge_Exchange_Certificate.pdf" target="_blank">Student Exchange Course: University of Cambridge.</a></li>
-              <li><a href="docs/MATLAB_Course_Certificate.pdf" target="_blank">Introducción a MATLAB/Simulink con Enfoque a Problemas de Control: Facultad de Ciencias Exactas, Físicas y Naturales, UNC.</a></li>
-            </ul>
-          </section>
-        </aside>
+        </div>
       </section>
 
       <section id="experience" class="content-section">
@@ -385,8 +386,7 @@
               <span class="tag">MATLAB</span>
               <span class="tag">SolidWorks</span>
               <span class="tag">Ansys</span>
-              <span class="tag">MoTeC</span>
-              <span class="tag">AiM</span>
+              <span class="tag">MoTeC / AiM</span>
               <span class="tag">LaTeX</span>
               <span class="tag">Autodesk Inventor</span>
               <span class="tag">Patran/Nastran</span>
@@ -410,23 +410,7 @@
         </div>
       </section>
 
-      <section class="resources-layout">
-        <section id="documents" class="content-block">
-          <div class="section-heading">
-            <p class="section-label">Supporting Material</p>
-            <h2>Documents</h2>
-          </div>
-          <ul class="resource-list">
-            <li><a href="docs/Academic_Transcript.pdf" target="_blank">Academic Transcript</a></li>
-            <li><a href="docs/IELTS_Certificate.pdf" target="_blank">IELTS Certificate</a></li>
-            <li><a href="docs/PLIDA_Certificate.pdf" target="_blank">PLIDA Certificate</a></li>
-            <li><a href="docs/Cambridge_Exchange_Certificate.pdf" target="_blank">Cambridge Exchange Certificate</a></li>
-            <li><a href="docs/MATLAB_Course_Certificate.pdf" target="_blank">MATLAB Course Certificate</a></li>
-            <li><a href="docs/SolidWorks_Course_Certificate.pdf" target="_blank">SolidWorks Course Certificate</a></li>
-          </ul>
-        </section>
-
-        <section id="references" class="content-block">
+      <section id="references" class="content-block references-section">
           <div class="section-heading">
             <p class="section-label">Recommendations</p>
             <h2>References</h2>
@@ -470,7 +454,6 @@
               </li>
             </ul>
           </div>
-        </section>
       </section>
     </main>
 
