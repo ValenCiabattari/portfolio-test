@@ -35,11 +35,11 @@ img {
 }
 
 a {
-  color: var(--accent);
+  color: inherit;
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.18em;
-  text-decoration-color: rgba(35, 56, 74, 0.45);
+  text-decoration-color: rgba(24, 33, 42, 0.34);
 }
 
 a:hover {
@@ -233,7 +233,7 @@ dl {
 .home-page .experience-company a {
   color: inherit;
   text-decoration-thickness: 1px;
-  text-decoration-color: rgba(24, 33, 42, 0.42);
+  text-decoration-color: rgba(24, 33, 42, 0.34);
 }
 
 .home-page .home-content {
@@ -442,46 +442,83 @@ dl {
 }
 
 .home-page .site-footer {
-  margin-top: 64px;
+  margin-top: 84px;
   background: #11181f;
   color: #d8e0e6;
-  border-radius: 14px;
 }
 
 .home-page .footer-inner {
+  width: min(1120px, calc(100% - 48px));
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  gap: 28px;
-  padding: 26px 30px;
+  gap: 14px;
+  padding: 52px 0 42px;
+  text-align: center;
 }
 
 .home-page .footer-name {
-  margin-bottom: 4px;
+  margin-bottom: 0;
   color: #ffffff;
   font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;
-  font-size: 1.15rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
 .home-page .footer-role {
-  margin-bottom: 0;
+  margin-bottom: 8px;
   color: #aebbc5;
-  font-size: 0.92rem;
+  font-size: 1.02rem;
 }
 
 .home-page .footer-links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 10px 20px;
+  justify-content: center;
+  gap: 10px 26px;
 }
 
 .home-page .footer-links a {
-  color: #eef3f6;
-  text-decoration-color: rgba(238, 243, 246, 0.42);
+  color: #dbe3e8;
+  text-decoration-color: rgba(219, 227, 232, 0.34);
   font-size: 0.94rem;
-  font-weight: 600;
+  font-weight: 500;
+}
+
+.home-page .footer-cta {
+  margin-top: 12px;
+}
+
+.home-page .footer-cta a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0 28px;
+  border-radius: 999px;
+  background: #f2f4f6;
+  color: #11181f;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.home-page .footer-cta a:hover {
+  background: #ffffff;
+}
+
+.home-page .footer-divider {
+  width: min(100%, 960px);
+  height: 1px;
+  margin-top: 18px;
+  background: rgba(216, 224, 230, 0.16);
+}
+
+.home-page .footer-note {
+  margin-bottom: 0;
+  color: #98a7b3;
+  font-size: 0.94rem;
 }
 
 .project-detail-page {
@@ -634,12 +671,11 @@ dl {
   }
 
   .home-page .footer-inner {
-    flex-direction: column;
-    align-items: flex-start;
+    width: min(100% - 28px, 1120px);
   }
 
   .home-page .footer-links {
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
 
